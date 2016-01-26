@@ -1,0 +1,47 @@
+{
+  "name": "grunt-bower-link",
+  "description": "link multiple bower components into a project for development",
+  "version": "0.1.0",
+  "homepage": "https://github.com/tobyroworth/grunt-bower-link",
+  "author": {
+    "name": "Toby Roworth",
+    "email": "toby.roworth@gmail.com",
+    "url": "http://www.wearsblackhasbeard.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tobyroworth/grunt-bower-link.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tobyroworth/grunt-bower-link/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/tobyroworth/grunt-bower-link/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "bower": "^1.7.2",
+    "path": "^0.12.7"
+  }
+}
