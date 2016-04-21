@@ -36,11 +36,11 @@ module.exports = function(grunt) {
 				var fullSrc = path.resolve(srcFile);
 				var fullDest = path.resolve(file.dest);
 				
-				grunt.log.writeln("Linking " + srcFile + " (" + fullSrc + ")");
+				//grunt.log.writeln("Linking " + srcFile + " (" + fullSrc + ")");
 				
 				tasks.push(function(bower, fullSrc, srcFile, callback) {bower.commands.link(undefined, undefined, {cwd: fullSrc})
 					.on('log', function(result) {
-						grunt.log.writeln(result.message);
+						//grunt.log.writeln(result.message);
 					}).on('error', function(result) {
 						grunt.fail.fatal(result.message);
 					}).on('end', function() {
@@ -49,11 +49,11 @@ module.exports = function(grunt) {
 						callback();
 					})}.bind(this, bower, fullSrc, srcFile));
 				
-				grunt.log.writeln("Linking " + srcName + " in " + file.dest + " (" + fullDest + ")");
+				//grunt.log.writeln("Linking " + srcName + " in " + file.dest + " (" + fullDest + ")");
 				
 				tasks.push(function(bower, srcName, fullDest, dest, callback) {bower.commands.link(srcName, undefined, {cwd: fullDest})
 					.on('log', function(result) {
-						grunt.log.writeln(result.message);
+						//grunt.log.writeln(result.message);
 					})
 					.on('error', function(result) {
 						grunt.fail.fatal(result.message);
