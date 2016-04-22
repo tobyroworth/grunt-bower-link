@@ -1,7 +1,7 @@
 {
   "name": "grunt-bower-link",
   "description": "link multiple bower components into a project for development",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/tobyroworth/grunt-bower-link",
   "author": {
     "name": "Toby Roworth",

@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 				
 				tasks.push(function(bower, fullSrc, srcFile, callback) {bower.commands.link(undefined, undefined, {cwd: fullSrc})
 					.on('log', function(result) {
-						//grunt.log.writeln(result.message);
+						grunt.verbose.writeln(result.message);
 					}).on('error', function(result) {
 						grunt.fail.fatal(result.message);
 					}).on('end', function() {
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 				
 				tasks.push(function(bower, srcName, fullDest, dest, callback) {bower.commands.link(srcName, undefined, {cwd: fullDest})
 					.on('log', function(result) {
-						//grunt.log.writeln(result.message);
+						grunt.verbose.writeln(result.message);
 					})
 					.on('error', function(result) {
 						grunt.fail.fatal(result.message);
